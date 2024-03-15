@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //CONTACTO FORMULARIO
 
 document.addEventListener('DOMContentLoaded', function() {
-    var formularioContacto = document.getElementById('formulario-contacto');
+    var formularioContacto = document.getElementById('form');
 
     formularioContacto.addEventListener('submit', function(event) {
         event.preventDefault();
