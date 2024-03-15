@@ -611,7 +611,8 @@ footer {
     .form {
         width: 85%;
         padding: 20px;
-        background-color:#ececec;
+        background-color:#f8f8f8;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     #contact {
@@ -627,16 +628,16 @@ footer {
 
     .form-row input[type="text"],
     .form-row input[type="email"] {
-    font-size: 13px;
-    width: 100%;
-    height: initial;
+        font-size: 13px;
+        width: 100%;
+        height: initial;
     }
     .form-row label {
-    font-size: 13px;
-    text-align: left;
-    width: 100%;
-    margin-top: 7px;
-    padding-right: 20px;
+        font-size: 13px;
+        text-align: left;
+        width: 100%;
+        margin-top: 7px;
+        padding-right: 20px;
     }
     .form-row textarea {
         font-size: 13px;
