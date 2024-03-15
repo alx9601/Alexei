@@ -13,8 +13,8 @@ body {
 
 /* HEADER */
 header {
-    background-color: #444444;
-    padding: 20px 0;
+    background-color: #1b1b1b;
+    padding: 35px 0;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
     z-index: 2;
 }
@@ -65,13 +65,13 @@ header {
 
 /* Cambio de color al pasar el cursor por encima */
 .menu li a:hover {
-    color: #8d6bdb; /* Cambia el color al morado cuando se pasa el cursor por encima */
+    color: #875af0; /* Cambia el color al morado cuando se pasa el cursor por encima */
     font-weight: bold;
     font-size: 15px;
 }
 
 .logo i:hover{
-    color: #8d6bdb;
+    color: #875af0;
 }
 
 /* Estilos del icono de menú */
@@ -83,7 +83,7 @@ header {
 }
 
 .menu-icon:hover{
-    color: #8d6bdb;
+    color: #875af0;
 }
 
 
@@ -138,9 +138,9 @@ header {
 .card-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px; /* Separación entre cards */
     justify-content: center; /* Centrar horizontalmente */
-    padding: 3em 0;
+    padding: 4em 0;
 }
 
 .card {
@@ -152,6 +152,7 @@ header {
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center;
+    cursor: pointer;
 
     /* TRANSICION DE NUEVAS CARDS */
     transition: transform 0.8s ease-in; /* Transición de desplazamiento suave */
@@ -341,8 +342,14 @@ footer {
 }
 
 
-
 /* Estilos para dispositivos móviles */
+@media screen and (max-width: 1024px) {
+    .card-gallery {
+             grid-gap: 25px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
     /* HEADER */
@@ -379,6 +386,7 @@ footer {
 
     .card-gallery {
         grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas más pequeñas */
+        grid-gap: 10px;
     }
 
 
@@ -425,6 +433,7 @@ footer {
 @media (max-width: 480px) {
     .card-gallery {
         grid-template-columns: repeat(1, 1fr); /* Cambiar a una columna en pantallas aún más pequeñas */
+        grid-gap: 20px;
     }
 
     #back-to-top .icon {

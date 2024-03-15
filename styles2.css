@@ -1,0 +1,295 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header {
+    background-color: #1b1b1b;
+    padding: 35px 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Alineación al centro por defecto */
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.logo {
+    margin-right: auto; /* Margen derecho automático para centrar el logo */
+}
+
+.logo i {
+    color: white; /* Aplica color blanco al icono */
+    font-size: 30px; /* Tamaño de la fuente aumentado */
+}
+
+.nav-menu {
+    text-align: right; /* Alineación a la derecha */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Eliminar el margen para evitar espacios adicionales */
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 40px; /* Espacio entre elementos del menú */
+}
+
+.menu li:first-child {
+    margin-left: 0; /* No hay margen a la izquierda para el primer elemento */
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+/* Cambio de color al pasar el cursor por encima */
+.menu li a:hover {
+    color: #875af0; /* Cambia el color al morado cuando se pasa el cursor por encima */
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.logo i:hover{
+    color: #875af0;
+}
+
+/* Estilos del icono de menú */
+.menu-icon {
+    display: none; /* Ocultar el icono de menú por defecto */
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-icon:hover{
+    color: #875af0;
+}
+
+
+
+/* MAIN */
+
+/* SLIDER DE IMAGENES */
+
+.slider {
+    width: 100%; /* Ancho del viewport 98.96vw */
+    height: 300px; /* Altura fija */
+    overflow: hidden; /* Oculta las partes de las imágenes que se salen del contenedor */
+
+    position: relative; /* Establece el contexto de apilamiento para los elementos hijos posicionados */    
+}
+
+
+.slider img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto original */
+    object-fit: cover; /* Mantiene la relación de aspecto original de la imagen y cubre todo el contenedor */
+    position: absolute; /* Permite posicionar las imágenes dentro del contenedor */
+    transition: opacity 2s; /* Añade una transición suave de opacidad */
+  }
+
+
+.slider img:not(:first-child) {
+  opacity: 0; /* Oculta todas las imágenes excepto la primera */
+}
+
+
+
+/* Estilos CSS para el formulario de contacto */
+
+#contacto {
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container p{
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.contact-section {
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #6a4caf; /* Cambia el color al morado cuando se pasa el cursor por encima */
+}
+
+
+#back-to-top {  
+    margin: auto;
+    z-index: 9999;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#back-to-top:hover {
+    color: #8d6bdb;
+}
+
+/* Estilos para el icono */
+#back-to-top .icon {
+    display: none; /* Oculta el icono por defecto */
+    
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#back-to-top .icon{
+    color: #8d6bdb;
+}
+
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    .header-content {
+        justify-content: flex-end; /* Alineación a la derecha */
+    }
+
+    .logo {
+        margin-right: auto; /* Margen derecho automático para centrar el logo */
+    }
+
+    .nav-menu {
+        display: none; /* Ocultar la barra de navegación por defecto */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar el icono de menú en dispositivos móviles */
+    }
+
+    /* BODY */
+
+    .slider{
+        height: 150px; /*Altura fija en pantallas pequeñas */
+    }
+
+    .slide img {
+        max-width: 100%; /* Ancho máximo en pantallas pequeñas */
+    }
+
+    
+    /* FOOTER */
+    
+
+    #back-to-top .text {
+        display: none; 
+    }
+
+    #back-to-top .icon {
+        display: inline-block; /* Mostrar el icono en dispositivos móviles */
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    #back-to-top .icon {
+        display: block; /* Mostrar el icono en dispositivos móviles */
+    }
+}
