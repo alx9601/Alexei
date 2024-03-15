@@ -16,6 +16,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//SCROLL TO CONTACT
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Verificar si la página actual es "contact.html"
+    if (window.location.pathname.includes("contact.html")) {
+        const contactLink = document.querySelector('a[href="contact.html"]');
+        
+        contactLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace (navegar a otra página)
+        
+            const contactSection = document.getElementById('contact');
+            const sectionOffset = contactSection.offsetTop; // Obtén la distancia desde la parte superior del documento hasta la sección "Contact"
+        
+            window.scrollTo({
+                top: sectionOffset,
+                behavior: 'smooth' // Realiza un scroll suave
+            });
+        });
+    }
+});
+
+//MENU NAVEGACION
+
+let menu_responsive = document.querySelector(".menu-icon");
+
+menu_responsive.onclick = function () {
+  navmenu = document.querySelector(".nav-menu");
+  navmenu.classList.toggle("active");
+
+};
+
+let menu_responsive_page = document.querySelector(".menu");
+
+menu_responsive_page.onclick = function () {
+  setTimeout(function() {
+    navmenu.classList.remove("active");
+  }, 150); // Cambia este valor al mismo que uses en tu transición CSS si es diferente
+
+};
+
 
 //SLIDER
 

@@ -65,13 +65,21 @@ header {
 
 /* Cambio de color al pasar el cursor por encima */
 .menu li a:hover {
-    color: #875af0; /* Cambia el color al morado cuando se pasa el cursor por encima */
+    color: #8152f8; /* Cambia el color al morado cuando se pasa el cursor por encima */
     font-weight: bold;
     font-size: 15px;
 }
 
+.menu li a:active {
+    color: #7853ce; /* Cambia el color al morado cuando se pasa el cursor por encima */
+}
+
 .logo i:hover{
-    color: #875af0;
+    color: #8152f8;
+}
+
+.logo i:active{
+    color: #6a4caf;
 }
 
 /* Estilos del icono de menú */
@@ -83,7 +91,11 @@ header {
 }
 
 .menu-icon:hover{
-    color: #875af0;
+    color: #8152f8;
+}
+
+.menu-icon:active{
+    color: #6a4caf;
 }
 
 
@@ -214,6 +226,10 @@ header {
 }
 
 .form-row button[type="submit"]:hover {
+    background-color: #8152f8; /* Color morado más oscuro al hacer hover */
+}
+
+.form-row button[type="submit"]:active {
     background-color: #3c2b66; /* Color morado más oscuro al hacer hover */
 }
 
@@ -256,9 +272,12 @@ footer {
 }
 
 .icon-link:hover {
-    color: #6a4caf; /* Cambia el color al morado cuando se pasa el cursor por encima */
+    color: #8152f8; /* Cambia el color al morado cuando se pasa el cursor por encima */
 }
 
+.icon-link:active {
+    color: #6a4caf; /* Cambia el color al morado cuando se pasa el cursor por encima */
+}
 
 #back-to-top {  
     margin: auto;
@@ -274,7 +293,11 @@ footer {
 }
 
 #back-to-top:hover {
-    color: #8d6bdb;
+    color: #8152f8;
+}
+
+#back-to-top:active {
+    color: #6a4caf;
 }
 
 /* Estilos para el icono */
@@ -288,6 +311,10 @@ footer {
 
 #back-to-top .icon{
     color: #8d6bdb;
+}
+
+#back-to-top .icon:active {
+    color: #8152f8;
 }
 
 
