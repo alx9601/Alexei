@@ -467,12 +467,8 @@ footer {
     cursor: pointer;
 }
 
-#back-to-top .icon{
-    color: #8d6bdb;
-}
-
 #back-to-top .icon:active {
-    color: #8152f8;
+    color: #8d6bdb;
 }
 
 
@@ -537,7 +533,7 @@ footer {
         padding: 7px 7px;
     }
     
-    .nav-menu ul.menu li a:hover {
+    .nav-menu ul.menu li a:active {
         color: #8152f8;
     }
 
