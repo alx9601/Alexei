@@ -105,7 +105,7 @@ header {
 
 .slider {
     width: 100%; /* Ancho del viewport 98.96vw */
-    height: 300px; /* Altura fija */
+    height: 400px; /* Altura fija */
     overflow: hidden; /* Oculta las partes de las imágenes que se salen del contenedor */
 
     position: relative; /* Establece el contexto de apilamiento para los elementos hijos posicionados */    
@@ -118,6 +118,7 @@ header {
     object-fit: cover; /* Mantiene la relación de aspecto original de la imagen y cubre todo el contenedor */
     position: absolute; /* Permite posicionar las imágenes dentro del contenedor */
     transition: opacity 2s; /* Añade una transición suave de opacidad */
+    
   }
 
 
