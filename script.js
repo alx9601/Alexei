@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const newCard = document.createElement('div');
             newCard.classList.add('card');
             newCard.innerHTML = `
-                <img src="imagenes/imagen3.png" alt="Work ${i+10}">            
+                <img src="imagenes/image_works.jpg" alt="Work ${i+10}">            
                  <h3>Work ${i+10}</h3>            
                  `;
         
